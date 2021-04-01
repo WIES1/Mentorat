@@ -1,0 +1,82 @@
+public class MentoratAccount {
+    private String name;
+    private String surname;
+    private int number;
+    private String objectives;
+    private String attribution;
+    private String agreement;
+    private double currPlanning = 0;
+    private String rating;
+    private String note taking;
+       
+    public MentoratAccount(String name, String surname,
+	                        		int number, String objectives, String attribution, String agreement, String rating, String note,) {
+		super();
+		this.name = name;
+		this.surname = surname;
+		this.number = number;
+		this.objectives = objectives;
+		this.attribution = attribution;
+		this.agreement = agreement;
+		this.rating = rating;
+		this.note = note;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public int getNumber() {
+		return number;
+	}
+	public double getCurrPlanning() {
+		return currPlanning;
+	}
+    public double addSession(double session)
+    public String getObjectives() {
+        return objectives;
+    }
+    public String getAttribution() {
+        return attribution;
+    }
+    public String getAgreement() {
+        return agreement;
+    }
+    public String getRating() {
+        return rating;
+    }
+    public String getNote() {
+        return note;
+    }
+    {
+    	currSession += hours;
+    	return currSession;
+    }
+    public double getHours(double hours)
+    {
+    	currSession -= hours;
+    	return currSession;
+    }
+	@Override
+	public String toString() {
+		String str = "Owner name : " + name
+				+" Owner surname : " + surname
+				+" Account number : " + number
+                +" Details objectives : " + objectives
+                +" Mentor attribution : " + attribution
+                +" Contract agreement : " + agreement
+                +" Evaluation rating : " + rating
+                +" Taking note : " + note
+				+" Current session : " + currSession + " H";
+
+		return str;
+	}
+    
+}
+
+
+
+
+
+
